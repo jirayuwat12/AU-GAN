@@ -12,3 +12,5 @@ datasets
 check 
 
 raw_unzip/
+
+*.zip
