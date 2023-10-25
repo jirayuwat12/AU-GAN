@@ -1,11 +1,10 @@
-import tensorflow as tf
-import tensorflow.contrib.slim as slim
+import tensorflow.compat.v1 as tf
+import tf_slim as slim
 import math
 import pprint
 pp = pprint.PrettyPrinter()
 get_stddev = lambda x, k_h, k_w: 1/math.sqrt(k_w*k_h*x.get_shape()[-1])
-import tensorflow.contrib as tf_contrib
-weight_init = tf_contrib.layers.xavier_initializer()
+weight_init = tf.keras.initializers.glorot_normal()
 weight_regularizer = None
 
 def batch_norm(x, name="batch_norm"):
