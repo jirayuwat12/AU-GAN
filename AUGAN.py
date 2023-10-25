@@ -6,7 +6,7 @@ from ops import *
 import time
 import matplotlib.pyplot as plt
 from glob import glob
-
+from tqdm import tqdm
 
 
 class AUGAN(object):
