@@ -8,9 +8,21 @@ __pycache__
 .idea
 
 datasets
-
-check 
-
+ 
 raw_unzip/
 
 *.zip
+
+sample/
+
+testa2b
+
+testb2a
+
+conf
+
+# trained weight
+*.data-00000-of-00001
+*.index
+*.meta
+checkpoint
