@@ -69,6 +69,11 @@ python main_uncer.py --dataset_dir alderley
 # BDD100k (256x512)
 python main.py --dataset_dir bdd100k  --phase train --experiment_name my_train_5_epoch --batch_size 2  --load_size 286 --fine_size 128 --epoch 5 --save_freq 5 --print_freq 2 --use_uncertainty True
 
+# AJDATASET01 (256x512)
+python main.py --dataset_dir AJDATASET01  --phase train --experiment_name pure_data_same_model_as_BDD --batch_size 2  --load_size 286 --fine_size 128 --epoch 10 --save_freq 5 --print_freq 2 --use_uncertainty True --continue_train 1
+
+python main.py --dataset_dir AJDATASET01  --phase train --experiment_name pure_data_same_model_as_BDD_NU --batch_size 2  --load_size 286 --fine_size 128 --epoch 10 --save_freq 5 --print_freq 2 --use_uncertainty False --continue_train 1
+
 ```
 
 ## Test
