@@ -74,6 +74,10 @@ python main.py --dataset_dir AJDATASET01  --phase train --experiment_name pure_d
 
 python main.py --dataset_dir AJDATASET01  --phase train --experiment_name pure_data_same_model_as_BDD_NU --batch_size 2  --load_size 286 --fine_size 128 --epoch 10 --save_freq 5 --print_freq 2 --use_uncertainty False --continue_train 1
 
+python main.py --dataset_dir AJDATASET02  --phase train --experiment_name augmented_ajdataset --batch_size 2  --load_size 286 --fine_size 128 --epoch 10 --save_freq 10 --print_freq 2 --use_uncertainty True --continue_train 0
+
+python main.py --dataset_dir AJDATASET02  --phase train --experiment_name augmented_ajdataset_NU --batch_size 2  --load_size 286 --fine_size 128 --epoch 10 --save_freq 10 --print_freq 2 --use_uncertainty False --continue_train 0
+
 ```
 
 ## Test
